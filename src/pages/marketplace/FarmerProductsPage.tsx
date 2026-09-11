@@ -60,9 +60,9 @@ export const FarmerProductsPage: React.FC<FarmerProductsPageProps> = ({ onNaviga
   const [formWaterSource, setFormWaterSource] = useState<string>('Solar Drip Irrigation');
 
   // Filter farmer products
-  // If user is farmer, show products matching user.id or default farmer id = 1
+  // If user is farmer, show only products owned by them (default farmer id = 1 when logged out)
   const farmerId = user?.id || 1;
-  const myProducts = products.filter((p) => p.farmer_id === farmerId || p.farmer_id === 1);
+  const myProducts = products.filter((p) => p.farmer_id === farmerId);
 
   // Metrics
   const totalStockKg = myProducts.reduce((sum, p) => sum + p.quantity_available, 0);
