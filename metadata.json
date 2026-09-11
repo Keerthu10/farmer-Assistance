@@ -1,0 +1,6 @@
+{
+  "name": "Farmer Assistance Web Service",
+  "description": "Comprehensive digital agriculture and direct farm-to-customer marketplace platform connecting verified farmers with consumers, restaurants, supermarkets, and wholesalers with batch traceability and escrow payments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
